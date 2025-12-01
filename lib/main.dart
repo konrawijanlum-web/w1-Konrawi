@@ -195,36 +195,14 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 20),
-                      Container(
-                        height: 40,
-                        child: Row(
-                          children: [
-                            Column(children: [Text("5"), Text("กำลังติดตาม")]),
-                            SizedBox(width: 15),
-                            VerticalDivider(
-                              thickness: 1,
-                              color: Colors.grey[400],
-                              width: 1,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 15),
-                      Container(
-                        height: 40,
-                        child: Row(
-                          children: [
-                            Column(children: [Text("31"), Text("ผู้ติดตาม")]),
-                            SizedBox(width: 15),
-                            VerticalDivider(
-                              thickness: 1,
-                              color: Colors.grey[400],
-                              width: 1,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 15),
+                      Column(children: [Text("5"), Text("กำลังติดตาม")]),
+                      SizedBox(width: 5,),
+                      Container(width: 1.5,height: 40,color: Colors.grey.shade400,),
+                      SizedBox(width: 20),
+                      Column(children: [Text("31"), Text("ผู้ติดตาม")]),
+                      SizedBox(width: 5,),
+                      Container(width: 1.5,height: 40,color: Colors.grey.shade400,),
+                      SizedBox(width: 20),
                       Column(children: [Text("300"), Text("ถูกใจและบันทึก")]),
                     ],
                   ),
@@ -278,7 +256,7 @@ class SecondPage extends StatelessWidget {
                             fixedSize: Size(300, 40),
                             backgroundColor: Colors.yellow,
                             foregroundColor: Colors.black,
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                            shape: BeveledRectangleBorder(borderRadius: BorderRadius.circular(4)),
                           ),
                         ),
                         Container(
